@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favikon/dm/dm-apple-touch-icon.png"
+        media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="favikon/lm/lm-apple-touch-icon.png"
+        media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="favikon/dm/dm-favicon-32x32.png"
+        media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="favikon/lm/lm-favicon-32x32.png"
+        media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="favikon/dm/dm-favicon-16x16.png"
+        media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="favikon/lm/lm-favicon-16x16.png"
+        media="(prefers-color-scheme: light)">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+            </a>
+        </div>
+        <div class="navmenu">
+            <a href="index.html">
+                <div class="navbar_button">FORSIDE</div>
+            </a>
+            <a href="portfolio.html">
+                <div class="navbar_button">PORTFOLIO</div>
+            </a>
+            <a href="ommig.html">
+                <div class="navbar_button">OM MIG</div>
+            </a>
+        </div>
+        <div class="menu_knap">
+            <div class="menu_ikon">
+                <img src="ikoner/burger_menu_icon.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="content_wrapper">
+        <section class="tema1_landing">
+            <a href="portfolio.html" class="portfolio_back">
+                <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
+                <div class="portfolio_knap_tilbage">TILBAGE TIL PORTFOLIO</div>
+            </a>
+            <div class="tema_title">
+                <h1>ANIMATION</h1>
+            </div>
+            <h3>Tema 4</h3>
+            <div class="portfolio_landing_layout">
+
+                <div class="webudvikling_content_1">
+                    <p class="portfolio_whitebox">I tema 4 blev vi introduceret til Javascript, CSS animationer og
+                        konceptudvikling, som vi skulle
+                        bruge til at lave vores helt eget interaktive spil. Her lærte vi mere om vektorgrafik og hvordan
+                        den adskiller sig fra pixelgrafik.</p>
+                </div>
+                <div class="webudvikling_landing_billeder">
+                    <img src="billeder/tema4_img_placeholder.jpg" alt="" class="img_style">
+                </div>
+            </div>
+            <section class="section_gap">
+                <div class="pixel_vector_container">
+                    <div class="">
+                        <h2>Vektor:</h2>
+                        <p>Vektorgrafik bruger matematiske udregninger til at danne linjer eller kurver. De udregninger
+                            gør, at man, i modsætning til pixels, kan zoome ind eller skalere grafikken uden noget tab
+                            af kvalitet. Vektorgrafik er det foretrukne valg for logoer eller illustrationer, hvor det
+                            er vigtigt at kunne skalere uden kvalitetstab. </p>
+                    </div>
+                    <div class="">
+                        <h2>Pixel:</h2>
+                        <p>Pixelgrafik består af små individuelle firkanter, der samlet udgør et billede. Det kan ses
+                            tydeligt, hvis man uploader et JPG billede i Photoshop, og begynder at zoome så langt ind
+                            som muligt.</p>
+                    </div>
+                </div>
+                <h2>Nye Filtyper</h2>
+                <p>Til temaets opgave skulle vi selv tegne vores egne assets i Illustrator til vores spil. Eftersom at
+                    spillet blandt andet har med skalerings-animationer at gøre, benyttede jeg mig af vektorgrafik frem
+                    for pixelgrafik, for at få bedst mulig opløsning. Til det eksporterede vi dem i SVG-formatet
+                    (Scaleable Vector Graphics), som var det oplagte valg, eftersom at filformatet er lavet til
+                    skalering, men også på grund af filstørrelsen som er enorm lille, da SVG-filer i sidste ende bare er
+                    tekst. Eftersom at filerne bare er tekst, er de også nemme at style med CSS. Og med alt det tekniske
+                    på plads, blev det tid til at hive blyant og penalhus frem. </p>
+            </section>
+            <section class="section_gap">
+                <h1>Javascript</h1>
+                <p>At blive introduceret til Javascript var nogenlunde hvordan jeg forestiller mig det må føles at blive
+                    låst inde i et MMA-bur med en sølvryg-gorilla: Lidt af en udfordring.
+                    På samme måde som CSS animationerne pustede liv i vores forhenværende statiske hjemmesider, så gav
+                    Javascript os flere værktøjer til at øge interaktiviteten på vores hjemmesider.
+                    Vi lærte at tilføje Eventlisteners der reagerer på alt fra brugerens klikken eller musebevægelse
+                    m.m.
+                </p>
+            </section>
+            <section class="section_gap">
+                <h1>Fishing For Fishies</h1>
+                <div class="fff_wrapper">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae vel vitae. Voluptatem
+                        provident consequuntur nulla recusandae fugit, excepturi animi magni autem voluptates unde
+                        accusantium facere temporibus delectus, aliquam error.</p>
+                </div>
+            </section>
+            <section class="section_gap"></section>
+            <section class="section_gap"></section>
+            <div onclick="scrollToTop()" class="tilbagetiltop scrollTop">
+                <img src="ikoner/pil_op.svg" alt="pil ikon der peger op">
+                <div class="portfolio_knap_tilbage">Tilbage til top</div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

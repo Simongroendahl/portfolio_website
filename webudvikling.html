@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favikon/dm/dm-apple-touch-icon.png"
+        media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="favikon/lm/lm-apple-touch-icon.png"
+        media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="favikon/dm/dm-favicon-32x32.png"
+        media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="favikon/lm/lm-favicon-32x32.png"
+        media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="favikon/dm/dm-favicon-16x16.png"
+        media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="favikon/lm/lm-favicon-16x16.png"
+        media="(prefers-color-scheme: light)">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js" defer></script>
+</head>
+
+<body class="portfolio_landing_wrapper">
+
+    <div class="navbar">
+        <div class="logo" id="landing_logo_bg">
+            <a href="index.html">
+                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon" id="landing_logo">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navmenu">
+            <a href="index.html">
+                <div class="navbar_button">FORSIDE</div>
+            </a>
+            <a href="portfolio.html">
+                <div class="navbar_button">PORTFOLIO</div>
+            </a>
+            <a href="ommig.html">
+                <div class="navbar_button">OM MIG</div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="content_wrapper">
+        <section class="tema1_landing">
+            <a href="portfolio.html" class="portfolio_back">
+                <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
+                <div class="portfolio_knap_tilbage">TILBAGE TIL PORTFOLIO</div>
+            </a>
+            <div class="tema_title">
+                <h1>WEBUDVIKLING</h1>
+            </div>
+            <h3>Tema 2</h3>
+            <div class="portfolio_landing_layout">
+
+                <div class="webudvikling_content_1">
+                    <p class="portfolio_whitebox">I tema 2 lærte vi om grundlæggende webudvikling og design.
+                        Frontend-udviklingen bestod af
+                        HTML-kodning, hvor vi lærte om dets opbygning bestående af tags, elementer og attributter.
+                        Derefter blev vi introduceret til styling i CSS, grid layouts, flexbox og box-modellen, som vi
+                        skulle bruge i vores studiestartprøve for at designe vores første hjemmeside. </p>
+                </div>
+                <div class="webudvikling_landing_billeder">
+                    <img src="billeder/coding_tema1_placeholder_img.jpg" alt="" class="img_style">
+                </div>
+            </div>
+            <section class="section_gap">
+                <div class="html_afsnit">
+                    <h2>HTML</h2>
+                    <div class="html_afsnit_flex">
+                        <div class="afsnit_box">
+                            <h3>Tags</h3>
+                            <p>HTML-tags indeholder instruktioner om hvordan en sides element skal vises, de starter med
+                                "<" og slutter med et ">" </p>
+                        </div>
+                        <div class="afsnit_box">
+                            <h3>Elementer</h3>
+                            <p>HTML-elementer består af et start-tag, noget indhold og slutter med et slut-tag.</p>
+                        </div>
+                        <div class="afsnit_box">
+                            <h3>Attributter</h3>
+                            <p>HTML-attributter giver yderligere information om HTML elementer. F.eks. I anchor-tags,
+                                hvor
+                                attributten “href”, giver hyperlinket en destination.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_gap">
+                <h2>Semantisk markup</h2>
+                <div class="col_2">
+                    <div class="semantisk_markup_box whitebox boxshadow">
+                        <h3>Semantisk markup</h3>
+                        <p>Her lærte vi om semantisk markup, hvilket er html-tags der har en vis rolle og betydning.
+                            Et
+                            par relevante eksempler på det kunne være: Header, nav, main, section, footer eller
+                            form. I
+                            kontrast til det, har man også de generiske, ikke-semantiske elementer såsom div eller
+                            span.
+                            Det der adskiller dem fra de semantiske elementer er, at de intet siger om indholdet.
+                        </p>
+                    </div>
+                    <div class="nesting_box whitebox boxshadow">
+                        <h3>Nesting</h3>
+                        <p>HTML- nesting er den hierarkiske strukturering af elementer, hvor man kan definerer
+                            relationerne blandt dem. Det kan ses i min studiestartprøve, hvor der i “col”-div’en er
+                            nestet både et paragraf-elemnent og et anchor-tag (som også er nestet inde i en div, da
+                            et
+                            anchor tag ikke er et block element). </p>
+                    </div>
+                    <img src="billeder/nesting.png" class="img_style" alt="screenshot af nesting i html">
+                </div>
+            </section>
+            <section class="section_gap">
+                <h2>CSS - Cascading Style Sheet</h2>
+                <div class="css_section_wrapper">
+                    <p>Hvor HTML er struktureringen af en hjemmeside, er CSS’en præsentationen af indholdet. Man
+                        definerer alt fra farver til fonts, afstande til strukturering. Dens opbygning er kaskaderende,
+                        hvilket vil sige at informationen går fra top til bund. Så hvad end der bliver defineret øverst
+                        i stylesheetet, vil påvirke alt relevant nedenunder. For at undgå for mange linjer kode, kan man
+                        benytte komma kombinator selectoren til at påvirke adskillige elementer samtidigt, som set i mit
+                        stylesheet:</p>
+                    <img src="" alt="">
+                </div>
+            </section>
+            <section class="section_gap" id="box_model_container">
+                <h2>Box-modellen</h2>
+                <div class="box_model_wrapper">
+                    <p>Et godt eksempel på hvordan box-modellen fungerer, er ved at forestille sig det, som en pakke
+                        der
+                        er blevet sendt til en.</p>
+                    <img src="billeder/box_model.png" alt="screenshot fra browser inspektion af box-model">
+                    <ul>
+                        <li>Contenten er selve “produktet” i midten.</li>
+                        <li>Paddingen er bobleplasten viklet om det.</li>
+                        <li>Border er selve papæsken, der indeholder produktet.</li>
+                        <li>Margin er området uden om boksen, som man bruger til at kontrollere pladsen mellem andre
+                            “bokse.” </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section_gap">
+                <h2>Grid & Flexbox</h2>
+                <p>Grid og Flexbox er to forskellige værktøjer med hver deres styrker og svagheder. I et grid-layout
+                    kan man skabe nøjagtige rammer for en grid containers (parent container) struktur og placeringen
+                    af dens grid items (child containere). Hvorimod at flexbox har en mere flydende og responsiv
+                    strukturering af dens flex-items.</p>
+                <div class="grid_flexbox_wrapper">
+                    <div class="grid_section whitebox boxshadow">
+                        <h3>GRID</h3>
+                        <p>CSS grid er et layout system, der består af rækker og kolonner. Her kan man præcist
+                            bestemme
+                            mængder af dem, deres størrelser og rækkefølger. Det er det oplagte valg, hvis ens
+                            container
+                            har brug for en specifik eller kompleks opsætning.</p>
+                        <img src="billeder/galleri_grid.png" class="whitebox"
+                            alt="screenshot fra studiestartsprøvens galleri sektion">
+                        <p>Her valgte jeg et gridlayout fremfor flexbox, da der var behov for nøjagtig
+                            strukturering
+                            af billederne, der enten var horisontale eller kvadratiske.</p>
+                    </div>
+                    <div class="flexbox_section blackbox boxshadow">
+                        <h3>FLEXBOX</h3>
+                        <p>Flexbox layout systemet bearbejder kun én kolonne eller række ad gangen. Derimod er det
+                            designet til at være fleksibel med opsætning af flex-items.
+                        </p>
+                        <video src="video/tema1_flexbox_video1.webm" class="whitebox" autoplay muted loop></video>
+                        <p>I studiestartprøvens komponentsektion, skulle to div-elementer placeres i hver sin ende
+                            af en
+                            container. Her brugte jeg :last-child-selektoren til at give den en margin-top: auto.
+                            Her
+                            burde jeg bare have brugt justify-content: space-between for samme resultat med mindre
+                            kode.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section_gap">
+                <h2>Responsivt Webdesign</h2>
+                <p>Da iPhonen blev introduceret tilbage i 2007 fik webudviklere verden rundt travlt. Pludseligt
+                    var der en helt ny størrelse skærm, som blev manges foretrukne måde at browse på nettet på farten.
+                </p>
+                <p>Media queries blev svaret til efterspørgslen på responsivt webdesign. I stylesheetet defineres en
+                    syntaks med en specifik størrelse som ens media query holder øje med. Når den overgås,
+                    omstrukturerer den sidens layout og styling ud fra en skærms viewport størrelse til det anderledes
+                    layout man har kodet.</p>
+                <div class="mediaquerycontainer whitebox boxshadow">
+                    <h2>Media Queries: "Mobile-first"</h2>
+                    <div class="queryvideogrid">
+                        <video src="video/mediaquery_video.webm" muted autoplay loop></video>
+                        <p>Til studiestartprøven arbejdede vi ud fra “Mobile-first” tilgangen, hvor sidens layout skulle
+                            kodes
+                            med hensyn til smartphones’ skærmstørrelser. Her satte jeg media query’en til: @media
+                            (min-width:
+                            800px), hvilket gør at når skærmstørrelsens bredde passerer 800px, så ændrer hjemmesidens
+                            layout
+                            sig
+                            fra et række-baseret layout til at benytte sig af flere kolonner. </p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section_gap">
+                <div class="ny_viden_wrapper whitebox boxshadow">
+                    <h2>Hvad jeg fik lært i tema 2:</h2>
+                    <p>Man kan aldrig have 100% kontrol over en hjemmesides udseende, da der findes så mange forskellige
+                        skærmstørrelser. Men med media queries kommer vi som webudviklere så tæt på fuld kontrol over en
+                        hjemmesides funktion og udseende i forhold skærmstørrelsen. </p>
+                    <div class="ny_viden_grid">
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Grid og Flex layouts</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Responsiv Webdesign</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Design principper</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Typografi</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div onclick="scrollToTop()" class="tilbagetiltop scrollTop">
+                <img src="ikoner/pil_op.svg" alt="pil ikon der peger op">
+                <div class="portfolio_knap_tilbage">Tilbage til top</div>
+            </div>
+
+
+        </section>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="kontaktinfo">
+                Email: Sila0002@stud.kea.dk
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

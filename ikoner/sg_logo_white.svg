@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.48 80.17">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: NeutralFaceBold, 'Neutral Face';
+        font-size: 72px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="M78.48,35.23v8.64h-10.46c2.53,6.29,7.67,9.13,13.69,9.13,8.66,0,15.21-5.75,15.21-18.32s-6.59-18.32-15.21-18.32c-6.37,0-11.6,3.15-13.92,9.82h-12.96c3-13.93,13.48-21.95,26.88-21.95,15.21,0,27.77,10.9,27.77,30.45s-12.57,30.45-27.77,30.45c-6.9,0-13.24-2.16-18.12-6.36l-1.09,5.19h-7.82v-28.71h23.81Z"/>
+      <text class="cls-1" transform="translate(0 65.12)"><tspan x="0" y="0">S</tspan></text>
+    </g>
+  </g>
+</svg>
