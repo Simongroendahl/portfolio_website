@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700&display=swap");
 
 :root {
   /* farver */
@@ -128,10 +128,12 @@ h4 {
   font-size: 1.2em;
   letter-spacing: 1px;
 }
+
 h3 {
   font-size: clamp(1.6em, 1.6vw, 24px);
   line-height: 1.2em;
   letter-spacing: 2px;
+  font-weight: 700;
 }
 
 h2 {
@@ -186,10 +188,15 @@ p {
   }
 }
 
-.whitebox {
+.whitebox,
+.greenbox {
   background-color: var(--white);
   border: var(--border-outline);
   padding: 16px;
+}
+
+.greenbox {
+  background-color: var(--greenaccent);
 }
 
 .blackbox {
@@ -197,6 +204,10 @@ p {
   color: var(--white);
   border: var(--black);
   padding: 16px;
+}
+
+.accentGreen {
+  background-color: var(--greenaccent);
 }
 
 .boxshadow {
@@ -1379,7 +1390,40 @@ nav {
 /*********************** TEMA 4 ANIMATION ************************/
 /*********************** TEMA 4 ANIMATION ************************/
 
-.pixel_vector_container {
+.box2grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 16px;
+}
+.pixel_vector_container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.javascript_container {
+  background-color: var(--lightestorange);
+  border: var(--border-outline);
+  padding: var(--content-padding);
+}
+
+.storytelling_grid video {
+  padding-bottom: 32px;
+}
+
+.storytelling_grid2 video {
+  padding-bottom: 8px;
+}
+
+.tekst_grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.feedback_fff_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-content: center;
+  place-items: center;
+  gap: 16px;
 }

@@ -69,8 +69,22 @@
                     <img src="billeder/tema4_img_placeholder.jpg" alt="" class="img_style">
                 </div>
             </div>
-            <section class="section_gap">
-                <div class="pixel_vector_container">
+            <section class="section_gap box2grid">
+                <div class="whitebox">
+                    <h2>Nye Filtyper</h2>
+                    <p>Til temaets opgave skulle vi selv tegne vores egne assets i Illustrator til vores spil. Eftersom
+                        at
+                        spillet blandt andet har med skalerings-animationer at gøre, benyttede jeg mig af vektorgrafik
+                        frem
+                        for pixelgrafik, for at få bedst mulig opløsning. Til det eksporterede vi dem i SVG-formatet
+                        (Scaleable Vector Graphics), som var det oplagte valg, eftersom at filformatet er lavet til
+                        skalering, men også på grund af filstørrelsen som er enorm lille, da SVG-filer i sidste ende
+                        bare er
+                        tekst. Eftersom at filerne bare er tekst, er de også nemme at style med CSS. Og med alt det
+                        tekniske
+                        på plads, blev det tid til at hive blyant og penalhus frem. </p>
+                </div>
+                <div class="pixel_vector_container whitebox">
                     <div class="">
                         <h2>Vektor:</h2>
                         <p>Vektorgrafik bruger matematiske udregninger til at danne linjer eller kurver. De udregninger
@@ -85,24 +99,20 @@
                             som muligt.</p>
                     </div>
                 </div>
-                <h2>Nye Filtyper</h2>
-                <p>Til temaets opgave skulle vi selv tegne vores egne assets i Illustrator til vores spil. Eftersom at
-                    spillet blandt andet har med skalerings-animationer at gøre, benyttede jeg mig af vektorgrafik frem
-                    for pixelgrafik, for at få bedst mulig opløsning. Til det eksporterede vi dem i SVG-formatet
-                    (Scaleable Vector Graphics), som var det oplagte valg, eftersom at filformatet er lavet til
-                    skalering, men også på grund af filstørrelsen som er enorm lille, da SVG-filer i sidste ende bare er
-                    tekst. Eftersom at filerne bare er tekst, er de også nemme at style med CSS. Og med alt det tekniske
-                    på plads, blev det tid til at hive blyant og penalhus frem. </p>
             </section>
             <section class="section_gap">
-                <h1>Javascript</h1>
-                <p>At blive introduceret til Javascript var nogenlunde hvordan jeg forestiller mig det må føles at blive
-                    låst inde i et MMA-bur med en sølvryg-gorilla: Lidt af en udfordring.
-                    På samme måde som CSS animationerne pustede liv i vores forhenværende statiske hjemmesider, så gav
-                    Javascript os flere værktøjer til at øge interaktiviteten på vores hjemmesider.
-                    Vi lærte at tilføje Eventlisteners der reagerer på alt fra brugerens klikken eller musebevægelse
-                    m.m.
-                </p>
+                <div class="javascript_container">
+                    <h3>Javascript</h3>
+                    <p>Javascript gjorde det muligt at gøre vores websites dynamiske. Ved at give et DOM-objekt et ID,
+                        kan man skabe en genvej til den med Konstanter. Det blev vigtigt for os både for at gøre
+                        kodningen lettere, men også for at spare på hukommelse og CPU-kraft. Vi lærte at tilføje
+                        Eventlisteners, som reagerede på alt fra en brugers klikken til musebevægelsen, der kunne tilgå
+                        de elementer, vi havde lavet til Konstanter. Det gjorde at hvis der f.eks. blev klikket på en
+                        container og dens sprite, så kunne vi få Javascript til at lytte efter om musen var blevet
+                        klikket ned for så at starte en CSS animation på containeren, samtidigt med en anden animation
+                        på spriten. Det gav os stor mulighed for at være kreative i vores spildesign.
+                    </p>
+                </div>
             </section>
             <section class="section_gap">
                 <h1>Fishing For Fishies</h1>
@@ -113,8 +123,113 @@
                         accusantium facere temporibus delectus, aliquam error.</p>
                 </div>
             </section>
-            <section class="section_gap"></section>
-            <section class="section_gap"></section>
+            <section class="section_gap">
+                <div class="storytelling_wrapper whitebox">
+                    <h3>Storytelling:</h3>
+                    <div class="storytelling_grid">
+                        <p>Jeg spurgte et par bekendte om hvad der gjorde deres yndlingsspil specielle for dem. Der
+                            pegede mine findings på, at det var, hvis de blev følelsesmæssigt investerede i historien.
+                            Jeg gik i gang med at brainstorme, hvordan det kunne lade sig gøre i et browser spil og kom
+                            så på idéen om et tekstbaseret introduktion til spillet, hvor spilleren skal træffe sine
+                            egne valg, hvilket ændrer historiens gang. Spilleren har to muligheder: enten at falde i
+                            søvn, eller prøve at holde dig vågen. Dramaturgisk, skabte det også større spænding, da man
+                            fra start af ved, at der kommer til at ske noget dårligt, men man har muligheden for at
+                            udskyde det.</p>
+                        <video src="video/FFF_intro_adventure.webm" muted loop autoplay></video>
+                    </div>
+                    <h3>Game Mechanics:</h3>
+                    <div class="storytelling_grid2">
+                        <div class="tekst_grid">
+                            <p>Spillet er meget simpelt. Både gode og onde fisk springer op fra bølgerne, hvor dit mål
+                                er at
+                                fange så mange gode fisk som muligt. Dog i takt med at tiden løber ud, øges hastigheden
+                                med
+                                hvor hurtigt deres animationer bliver sat i gang, hvilket gør det lettere at komme til
+                                at
+                                klikke på de onde. Samtidigt begynder hele spillet at ryste og musikken intensiveres.
+                                Jeg
+                                valgte ikke at bruge et UI design til at vise, hvor meget tid der er tilbage. Det var
+                                vigtigt for mig at man som spiller ikke blev hevet ud af stemningen, så jeg valgte at
+                                animere et ansigt på baggrundens måne og spillets rysten som en mere naturlig og usynlig
+                                tidsindikator.</p>
+                        </div>
+                        <video src="video/FFF_gameplay.webm" autoplay muted loop></video>
+                    </div>
+                </div>
+            </section>
+            <section class="section_gap greenbox">
+                <h2>Feedback & Findings</h2>
+                <div class="feedback_fff_wrapper">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum facilis, molestias
+                        minima architecto minus consectetur nesciunt magnam aspernatur nostrum quos suscipit eligendi,
+                        incidunt enim dolores dolorum labore veniam! Sequi.</p>
+                    <img src="billeder/fff_feedback_1.webp" alt="screenshot af feedback for Fishing For Fishies"
+                        class="whitebox boxshadow">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias illum laboriosam magnam
+                        exercitationem ab natus consequatur, rem, sed magni error dignissimos tempora atque neque?
+                        Obcaecati fuga velit tenetur in qui?</p>
+                    <img src="billeder/fff_feedback_2.webp" alt="" class="whitebox boxshadow">
+                </div>
+            </section>
+            <section class="section_gap">
+                <div class="ny_viden_wrapper whitebox">
+                    <h2>Hvad jeg fik lært i tema 4:</h2>
+                    <p>Her lærte jeg at uanset hvor grundigt du får testet et produkt, hvor meget man får finpudset
+                        brugeroplevelsen - hvis man ikke gengiver de samme testrammer til når det færdige produkt
+                        fremvises. Så næste gang husker jeg lige en computermus, så folk kan opleve og spille mit spil,
+                        som det var ment.</p>
+                    <div class="ny_viden_grid">
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Javascript</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>CSS animationer</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>User interface</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>State Machine Diagram</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Aktivitetsdiagram</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Storytelling</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Lyddesign</h4>
+                        </div>
+                        <div class="ny_viden_box">
+                            <div class="ikon">
+                                <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
+                            </div>
+                            <h4>Adobe Illustrator</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div onclick="scrollToTop()" class="tilbagetiltop scrollTop">
                 <img src="ikoner/pil_op.svg" alt="pil ikon der peger op">
                 <div class="portfolio_knap_tilbage">Tilbage til top</div>
