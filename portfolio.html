@@ -26,85 +26,46 @@
     <div class="navbar">
         <div class="logo">
             <a href="index.html">
-                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                <img src="ikoner/sg_logo_white.svg" alt="Logo med initialerne S og G" class="logo_ikon">
             </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="navmenu">
             <a href="index.html">
-                <div class="navbar_button">FORSIDE</div>
+                <div class="navbar_button landing_nav_farve">FORSIDE</div>
             </a>
             <a href="portfolio.html">
-                <div class="navbar_button">PORTFOLIO</div>
+                <div class="navbar_button landing_nav_farve">PORTFOLIO</div>
             </a>
             <a href="ommig.html">
-                <div class="navbar_button">OM MIG</div>
+                <div class="navbar_button landing_nav_farve">OM MIG</div>
             </a>
 
         </div>
     </div>
     <div class="content_wrapper" id="portfolio_container">
+        <video autoplay muted loop id="landing_video">
+            <source src="video/portfolio_bg_2.mp4" type="video/mp4">
+        </video>
         <h1>VÆLG PORTFOLIO</h1>
         <div class="portfolio_wrapper">
-            <div class="tema_knap_style">
-                <h2>TEMA 2</h2>
-                <p>Grundlæggende Web</p>
-                <img src="billeder/kode-html-elementer-attributter-nesting.webp" alt="billede af tema 1 opgave, kodning"
-                    class="card_img">
-                <a href="https://sgrondahl.dk/kea/02_web/01_website/website/index.html">
-                    <div class="knap">Se Hjemmeside</div>
-                </a>
-                <a href="webudvikling.html">
-                    <div class="sekundaer_knap">Se Portfolio</div>
-                </a>
-            </div>
-
-
-            <div class="tema_knap_style">
-                <img src="" alt="">
-                <h2>TEMA 3</h2>
-                <p>UI & UX</p>
-                <img src="billeder/kode-html-elementer-attributter-nesting.webp" alt="billede af tema 1 opgave, kodning"
-                    class="card_img">
-                <a href="#">
-                    <div class="knap">Se Hjemmeside</div>
-                </a>
-                <a href="uiux.html">
-                    <div class="sekundaer_knap">Se Portfolio</div>
-                </a>
-            </div>
-
-
-            <div class="tema_knap_style">
-                <img src="" alt="">
-                <h2>TEMA 4</h2>
-                <p>Animation</p>
-                <img src="billeder/fishing_tema4.webp" alt="billede af min tema 4 opgave, Fishing For Fishies"
-                    class="card_img">
-                <a href="https://sgrondahl.dk/kea/04_animation/website/index.html">
-                    <div class="knap">Se Hjemmeside</div>
-                </a>
-                <a href="animation.html">
-                    <div class="sekundaer_knap">Se Portfolio</div>
-                </a>
-            </div>
-
-
-            <div class="tema_knap_style">
-                <img src="" alt="">
-                <h2>TEMA 5</h2>
-                <p>Grundlæggende Indhold</p>
-                <img src="billeder/portfolio_card_tema4.webp" alt="billede af tema 4 hjemmeside, Korte Samtaler"
-                    class="card_img">
-                <a href="#">
-                    <div class="knap">Se Hjemmeside</div>
-                </a>
-                <a href="grundlaeggendeindhold.html">
-                    <div class="sekundaer_knap">Se Portfolio</div>
-                </a>
-            </div>
-
+            <a href="webudvikling.html" class="port_link">
+                <div class="port_text">1 - Grundlæggede Web</div>
+            </a>
+            <a href="uiux.html" class="port_link">
+                <div class="port_text">2 - UI/UX</div>
+            </a>
+            <a href="animation.html" class="port_link">
+                <div class="port_text">3 - ANIMATION</div>
+            </a>
+            <a href="grundlaeggendeindhold.html" class="port_link">
+                <div class="port_text">4 - GRUNDLÆGGENDE INDHOLD</div>
+            </a>
         </div>
-    </div>
 
 
 </body>

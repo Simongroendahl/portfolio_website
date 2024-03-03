@@ -22,22 +22,22 @@
     <script src="portfolio.js" defer></script>
 </head>
 
-<body>
+<body class="portfolio_landing_wrapper">
     <div class="navbar">
         <div class="logo">
             <a href="index.html">
-                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                <img src="ikoner/sg_logo_white.svg" alt="Logo med initialerne S og G" class="logo_ikon">
             </a>
         </div>
         <div class="navmenu">
             <a href="index.html">
-                <div class="navbar_button">FORSIDE</div>
+                <div class="navbar_button landing_nav_farve">FORSIDE</div>
             </a>
             <a href="portfolio.html">
-                <div class="navbar_button">PORTFOLIO</div>
+                <div class="navbar_button landing_nav_farve">PORTFOLIO</div>
             </a>
             <a href="ommig.html">
-                <div class="navbar_button">OM MIG</div>
+                <div class="navbar_button landing_nav_farve">OM MIG</div>
             </a>
         </div>
         <div class="menu_knap">
@@ -48,6 +48,9 @@
     </div>
 
     <div class="content_wrapper">
+        <video autoplay muted loop id="landing_video">
+            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
+        </video>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
@@ -60,7 +63,8 @@
             <div class="portfolio_landing_layout">
 
                 <div class="webudvikling_content_1">
-                    <p class="portfolio_whitebox">I tema 5 var vores første opgave at lave video-content for en
+                    <p class="portfolio_whitebox blacktext">I tema 5 var vores første opgave at lave video-content for
+                        en
                         virksomhed.
                         Dernæst skulle vi i grupper redesigne en virksomheds hjemmeside.</p>
                 </div>

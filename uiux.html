@@ -22,15 +22,15 @@
     <script src="portfolio.js" defer></script>
 </head>
 
-<body class="portfolio_landing_wrapper">
+<body class="portfolio_landing_wrapper" id="uiux_body">
 
-    <div class="navbar">
+    <div class="navbar" id="port_nav">
         <div class="logo">
             <a href="index.html">
                 <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
             </a>
         </div>
-        <div class="navmenu">
+        <div class="navmenu portmenu">
             <a href="index.html">
                 <div class="navbar_button">FORSIDE</div>
             </a>
@@ -45,7 +45,9 @@
     </div>
 
     <div class="content_wrapper">
-
+        <video autoplay muted loop id="landing_video">
+            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
+        </video>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">

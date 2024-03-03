@@ -24,7 +24,7 @@
 
 <body class="portfolio_landing_wrapper">
 
-    <div class="navbar">
+    <div class="navbar" id="port_nav">
         <div class="logo" id="landing_logo_bg">
             <a href="index.html">
                 <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon" id="landing_logo">
@@ -50,6 +50,9 @@
     </div>
 
     <div class="content_wrapper">
+        <video autoplay muted loop id="landing_video">
+            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
+        </video>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
@@ -62,7 +65,7 @@
             <div class="portfolio_landing_layout">
 
                 <div class="webudvikling_content_1">
-                    <p class="portfolio_whitebox">I tema 2 lærte vi om grundlæggende webudvikling og design.
+                    <p class="portfolio_whitebox blacktext">I tema 2 lærte vi om grundlæggende webudvikling og design.
                         Frontend-udviklingen bestod af
                         HTML-kodning, hvor vi lærte om dets opbygning bestående af tags, elementer og attributter.
                         Derefter blev vi introduceret til styling i CSS, grid layouts, flexbox og box-modellen, som vi
@@ -77,17 +80,20 @@
                     <h2>HTML</h2>
                     <div class="html_afsnit_flex">
                         <div class="afsnit_box">
-                            <h3>Tags</h3>
-                            <p>HTML-tags indeholder instruktioner om hvordan en sides element skal vises, de starter med
+                            <h3 class="blacktext">Tags</h3>
+                            <p class="blacktext">HTML-tags indeholder instruktioner om hvordan en sides element skal
+                                vises, de starter med
                                 "<" og slutter med et ">" </p>
                         </div>
                         <div class="afsnit_box">
-                            <h3>Elementer</h3>
-                            <p>HTML-elementer består af et start-tag, noget indhold og slutter med et slut-tag.</p>
+                            <h3 class="blacktext">Elementer</h3>
+                            <p class="blacktext">HTML-elementer består af et start-tag, noget indhold og slutter med et
+                                slut-tag.</p>
                         </div>
                         <div class="afsnit_box">
-                            <h3>Attributter</h3>
-                            <p>HTML-attributter giver yderligere information om HTML elementer. F.eks. I anchor-tags,
+                            <h3 class="blacktext">Attributter</h3>
+                            <p class="blacktext">HTML-attributter giver yderligere information om HTML elementer. F.eks.
+                                I anchor-tags,
                                 hvor
                                 attributten “href”, giver hyperlinket en destination.</p>
                         </div>
@@ -98,8 +104,9 @@
                 <h2>Semantisk markup</h2>
                 <div class="col_2 whitebox">
                     <div class="semantisk_markup_box">
-                        <h3>Semantisk markup</h3>
-                        <p>Her lærte vi om semantisk markup, hvilket er html-tags der har en vis rolle og betydning.
+                        <h3 class="blacktext">Semantisk markup</h3>
+                        <p class="blacktext">Her lærte vi om semantisk markup, hvilket er html-tags der har en vis rolle
+                            og betydning.
                             Et
                             par relevante eksempler på det kunne være: Header, nav, main, section, footer eller
                             form. I
@@ -109,8 +116,9 @@
                         </p>
                     </div>
                     <div class="nesting_box">
-                        <h3>Nesting</h3>
-                        <p>HTML- nesting er den hierarkiske strukturering af elementer, hvor man kan definerer
+                        <h3 class="blacktext">Nesting</h3>
+                        <p class="blacktext">HTML- nesting er den hierarkiske strukturering af elementer, hvor man kan
+                            definerer
                             relationerne blandt dem. Det kan ses i min studiestartprøve, hvor der i “col”-div’en er
                             nestet både et paragraf-elemnent og et anchor-tag (som også er nestet inde i en div, da
                             et
@@ -132,19 +140,21 @@
                 </div>
             </section>
             <section class="section_gap" id="box_model_container">
-                <h2>Box-modellen</h2>
+                <h2 class="blacktext">Box-modellen</h2>
                 <div class="box_model_wrapper">
-                    <p>Et godt eksempel på hvordan box-modellen fungerer, er ved at forestille sig det, som en pakke
+                    <p class="blacktext">Et godt eksempel på hvordan box-modellen fungerer, er ved at forestille sig
+                        det, som en pakke
                         der
                         er blevet sendt til en.</p>
                     <img src="billeder/box_model.png" alt="screenshot fra browser inspektion af box-model">
-                    <ul>
-                        <li>Contenten er selve “produktet” i midten.</li>
-                        <li>Paddingen er bobleplasten viklet om det.</li>
-                        <li>Border er selve papæsken, der indeholder produktet.</li>
-                        <li>Margin er området uden om boksen, som man bruger til at kontrollere pladsen mellem andre
-                            “bokse.” </li>
-                    </ul>
+                    <div class="box_box">
+                        <p class="blacktext">Contenten er selve “produktet” i midten.</p>
+                        <p class="blacktext">Paddingen er bobleplasten viklet om det.</p>
+                        <p class="blacktext">Border er selve papæsken, der indeholder produktet.</p>
+                        <p class="blacktext">Margin er området uden om boksen, som man bruger til at kontrollere
+                            pladsen mellem andre
+                            “bokse.”</p>
+                    </div>
                 </div>
             </section>
             <section class="section_gap">
@@ -155,15 +165,16 @@
                     strukturering af dens flex-items.</p>
                 <div class="grid_flexbox_wrapper">
                     <div class="grid_section whitebox boxshadow">
-                        <h3>GRID</h3>
-                        <p>CSS grid er et layout system, der består af rækker og kolonner. Her kan man præcist
+                        <h3 class="blacktext">GRID</h3>
+                        <p class="blacktext">CSS grid er et layout system, der består af rækker og kolonner. Her kan man
+                            præcist
                             bestemme
                             mængder af dem, deres størrelser og rækkefølger. Det er det oplagte valg, hvis ens
                             container
                             har brug for en specifik eller kompleks opsætning.</p>
                         <img src="billeder/galleri_grid.png" class="whitebox"
                             alt="screenshot fra studiestartsprøvens galleri sektion">
-                        <p>Her valgte jeg et gridlayout fremfor flexbox, da der var behov for nøjagtig
+                        <p class="blacktext">Her valgte jeg et gridlayout fremfor flexbox, da der var behov for nøjagtig
                             strukturering
                             af billederne, der enten var horisontale eller kvadratiske.</p>
                     </div>
@@ -193,10 +204,11 @@
                     omstrukturerer den sidens layout og styling ud fra en skærms viewport størrelse til det anderledes
                     layout man har kodet.</p>
                 <div class="mediaquerycontainer whitebox boxshadow">
-                    <h2>Media Queries: "Mobile-first"</h2>
+                    <h2 class="blacktext">Media Queries: "Mobile-first"</h2>
                     <div class="queryvideogrid">
                         <video src="video/mediaquery_video.webm" muted autoplay loop></video>
-                        <p>Til studiestartprøven arbejdede vi ud fra “Mobile-first” tilgangen, hvor sidens layout skulle
+                        <p class="blacktext">Til studiestartprøven arbejdede vi ud fra “Mobile-first” tilgangen, hvor
+                            sidens layout skulle
                             kodes
                             med hensyn til smartphones’ skærmstørrelser. Her satte jeg media query’en til: @media
                             (min-width:
@@ -210,8 +222,9 @@
             </section>
             <section class="section_gap">
                 <div class="ny_viden_wrapper whitebox boxshadow">
-                    <h2>Hvad jeg fik lært i tema 2:</h2>
-                    <p>Man kan aldrig have 100% kontrol over en hjemmesides udseende, da der findes så mange forskellige
+                    <h2 class="blacktext">Hvad jeg fik lært i tema 2:</h2>
+                    <p class="blacktext">Man kan aldrig have 100% kontrol over en hjemmesides udseende, da der findes så
+                        mange forskellige
                         skærmstørrelser. Men med media queries kommer vi som webudviklere så tæt på fuld kontrol over en
                         hjemmesides funktion og udseende i forhold skærmstørrelsen. </p>
                     <div class="ny_viden_grid">
@@ -219,37 +232,37 @@
                             <div class="ikon">
                                 <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
                             </div>
-                            <h4>HTML</h4>
+                            <h4 class="blacktext">HTML</h4>
                         </div>
                         <div class="ny_viden_box">
                             <div class="ikon">
                                 <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
                             </div>
-                            <h4>CSS</h4>
+                            <h4 class="blacktext">CSS</h4>
                         </div>
                         <div class="ny_viden_box">
                             <div class="ikon">
                                 <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
                             </div>
-                            <h4>Grid og Flex layouts</h4>
+                            <h4 class="blacktext">Grid og Flex layouts</h4>
                         </div>
                         <div class="ny_viden_box">
                             <div class="ikon">
                                 <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
                             </div>
-                            <h4>Responsiv Webdesign</h4>
+                            <h4 class="blacktext">Responsiv Webdesign</h4>
                         </div>
                         <div class="ny_viden_box">
                             <div class="ikon">
                                 <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
                             </div>
-                            <h4>Design principper</h4>
+                            <h4 class="blacktext">Design principper</h4>
                         </div>
                         <div class="ny_viden_box">
                             <div class="ikon">
                                 <img src="ikoner/check_ikon.svg" alt="fuldført ikon">
                             </div>
-                            <h4>Typografi</h4>
+                            <h4 class="blacktext">Typografi</h4>
                         </div>
                     </div>
                 </div>
