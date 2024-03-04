@@ -2,7 +2,7 @@
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.48 80.17">
   <defs>
     <style>
-      .cls-1 {
+      .cls-1, .cls-2 {
         font-family: NeutralFaceBold, 'Neutral Face';
         font-size: 72px;
       }

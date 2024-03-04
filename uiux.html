@@ -24,30 +24,44 @@
 
 <body class="portfolio_landing_wrapper" id="uiux_body">
 
-    <div class="navbar" id="port_nav">
-        <div class="logo">
-            <a href="index.html">
-                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
-            </a>
-        </div>
-        <div class="navmenu portmenu">
-            <a href="index.html">
-                <div class="navbar_button">FORSIDE</div>
-            </a>
-            <a href="portfolio.html">
-                <div class="navbar_button">PORTFOLIO</div>
-            </a>
-            <a href="ommig.html">
-                <div class="navbar_button">OM MIG</div>
-            </a>
-
-        </div>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="sidebar_button">FORSIDE</a>
+        <a href="portfolio.html" class="sidebar_button">PORTFOLIO</a>
+        <a href="ommig.html" class="sidebar_button">OM MIG</a>
     </div>
 
+    <header>
+        <nav class="nav_block">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                </a>
+
+                <div class="navmenu">
+                    <a href="index.html">
+                        <div class="navbar_button">FORSIDE</div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="navbar_button underline">PORTFOLIO</div>
+                    </a>
+                    <a href="ommig.html">
+                        <div class="navbar_button">OM MIG</div>
+                    </a>
+
+                </div>
+                <span class="burger_button" onclick="openNav()">
+                    <img src="ikoner/burger_menu_icon.svg" alt="" class="nav_burger"></span>
+            </div>
+        </nav>
+    </header>
+
     <div class="content_wrapper">
-        <video autoplay muted loop id="landing_video">
-            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
-        </video>
+        <div class="video_baggrund">
+            <video autoplay muted loop id="landing_video">
+                <source src="video/portfolio_bg_bw.mp4" type="video/webm">
+            </video>
+        </div>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
@@ -70,6 +84,11 @@
                         første led i min research. Jeg valgte at prioritere kvalitative data, frem for kvantitative, da
                         jeg forventede at åbne spørgsmål ville fremtone nogle problemstillinger, jeg ikke selv havde
                         overvejet. Til mit held havde jeg ret.</p>
+                    <div class="landing_links">
+                        <a href="https://sgrondahl.dk/kea/03_uiux/tofyre_website/index.html">
+                            <div class="knap whitebox boxshadow" id="landingknap">Se Website</div>
+                        </a>
+                    </div>
                 </div>
                 <div class="webudvikling_landing_billeder">
                     <img src="billeder/ux_test.jpg" alt="" class="img_style">
@@ -130,7 +149,7 @@
                 <div class="indsigts_liste">
                     <div class="indsigts_box">
                         <div class="ikon">
-                            <img src="ikoner/check_ikon.svg" alt="">
+                            <img src="ikoner/check_ikon_white.svg" alt="">
                         </div>
                         <div class="indsigts_text">Let adgang til streaming og sociale medier</div>
                     </div>
@@ -218,9 +237,8 @@
                     </p>
                     <video autoplay loop muted plays-inline src="video/tofyre_landing.webm" type="video/webm"
                         class="video_grid"></video>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorum placeat, error aut
-                        fuga cum laboriosam ea natus eveniet recusandae beatae assumenda incidunt animi, itaque ad ipsam
-                        quia repudiandae ratione.</p>
+                    <p>Dette er en senere tilføjelse, da mine indsigter afslørede at jeg havde overset et vigtigt
+                        segment, bookere og management, der mest har brug for noget kontaktinformation.</p>
                     <video autoplay loop muted plays-inline src="video/tofyre_kontakt.webm" type="video/webm"
                         class="video_grid"></video>
 
@@ -239,6 +257,8 @@
                     der blev advaret mod i undervisningen), hvilket spildte en del af min tid på en digital prototype,
                     der ikke var nær så vigtig som et færdigt produkt. Det blev en fantastisk lærestreg, hvor jeg fik en
                     nyfunden respekt og forståelse for webkonventionernes rolle.</p>
+                <p>Det gjorde også at jeg ikke fik lavet min dokumentationsrapport, hvilket jeg nu har indset er lige så
+                    vigtig for det færdige produkt, som selve hjemmesiden er. </p>
                 <p>Det var også her omkring at jeg begyndte at forstå pointen med at lave hjemmesider: En hjemmeside er
                     ikke et kunstprojekt, den er et værktøj med et formål. Derfor er konventioner nødvendige, da
                     brugerne let skal kunne navigere og bruge det. Så med en skræddersyet brugeroplevelse, en

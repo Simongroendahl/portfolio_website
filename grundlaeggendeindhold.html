@@ -23,34 +23,44 @@
 </head>
 
 <body class="portfolio_landing_wrapper">
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="ikoner/sg_logo_white.svg" alt="Logo med initialerne S og G" class="logo_ikon">
-            </a>
-        </div>
-        <div class="navmenu">
-            <a href="index.html">
-                <div class="navbar_button landing_nav_farve">FORSIDE</div>
-            </a>
-            <a href="portfolio.html">
-                <div class="navbar_button landing_nav_farve">PORTFOLIO</div>
-            </a>
-            <a href="ommig.html">
-                <div class="navbar_button landing_nav_farve">OM MIG</div>
-            </a>
-        </div>
-        <div class="menu_knap">
-            <div class="menu_ikon">
-                <img src="ikoner/burger_menu_icon.svg" alt="">
-            </div>
-        </div>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="sidebar_button">FORSIDE</a>
+        <a href="portfolio.html" class="sidebar_button">PORTFOLIO</a>
+        <a href="ommig.html" class="sidebar_button">OM MIG</a>
     </div>
 
+    <header>
+        <nav class="nav_block">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                </a>
+
+                <div class="navmenu">
+                    <a href="index.html">
+                        <div class="navbar_button">FORSIDE</div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="navbar_button underline">PORTFOLIO</div>
+                    </a>
+                    <a href="ommig.html">
+                        <div class="navbar_button">OM MIG</div>
+                    </a>
+
+                </div>
+                <span class="burger_button" onclick="openNav()">
+                    <img src="ikoner/burger_menu_icon.svg" alt="" class="nav_burger"></span>
+            </div>
+        </nav>
+    </header>
+
     <div class="content_wrapper">
-        <video autoplay muted loop id="landing_video">
-            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
-        </video>
+        <div class="video_baggrund">
+            <video autoplay muted loop id="landing_video">
+                <source src="video/portfolio_bg_bw.mp4" type="video/webm">
+            </video>
+        </div>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
@@ -63,17 +73,107 @@
             <div class="portfolio_landing_layout">
 
                 <div class="webudvikling_content_1">
-                    <p class="portfolio_whitebox blacktext">I tema 5 var vores første opgave at lave video-content for
-                        en
-                        virksomhed.
-                        Dernæst skulle vi i grupper redesigne en virksomheds hjemmeside.</p>
+                    <p class="portfolio_whitebox blacktext">I tema 5 fokuserede vi primært på at lære om Premier Pro,
+                        billedredigering og styrkelse af samarbejdsevner. En stor del af forløbet omhandlede effektiv
+                        kommunikation på tværs, hvor vi eksempelvis blev introduceret til SCRUM-metoden, Team Canvas og
+                        hjemmesiden Trello for at optimere vores gruppesamarbejde. </p>
                 </div>
                 <div class="webudvikling_landing_billeder">
                     <img src="billeder/tema5_placeholder_landing_img.jpg" alt="" class="img_style">
                 </div>
             </div>
-            <section class="section_gap"></section>
-            <section class="section_gap"></section>
+            <section class="section_gap">
+                <h2>Stærkere gruppearbejde</h2>
+                <div class="gruppearbejde_wrapper">
+                    <div class="">
+                        <h3>Team Canvas</h3>
+                        <p>At arbejde i et kreativt team kræver struktureret samarbejde og klare retningslinjer. Der
+                            skabte Team Canvas en dybere forståelse for teamets dynamik, mål og individuelle
+                            styrker.
+                            Ved at fastlægge roller, ansvar og fælles mål hjalp Team Canvas os med at skabe et
+                            sammenhængende og effektivt team, der arbejder mod fælles succes.</p>
+                    </div>
+                    <img src="billeder/team_canvas.webp" alt="billede af vores udfyldte Team Canvas"
+                        class="whitebox boxshadow">
+                </div>
+                <h3>Trello</h3>
+                <p>Da det var på plads, brugte vi hjemmesiden Trello for at organisere vores arbejdsopgaver,
+                    hvor vi
+                    skulle skrive hvor længe opgaven cirka ville tage. Det gjorde nemt ens gruppe at
+                    overskue
+                    arbejdsopgaverne, som man så kunne færdiggøre uden at skulle planlægge med resten af
+                    gruppen. Vi
+                    opdelte dem i primært tre sektioner: To-do, Doing og Done. </p>
+                <img src="billeder/trello.webp" alt="Screenshot af min gruppes Trelloboard"
+                    class="whitebox boxshadow image_margin">
+                <p>En central del af vores gruppearbejde blev indførelsen af Trello som vores nye værktøj. Vi brugte
+                    Trellos funktioner som labels og farvekoder, så vi let kunne identificere og fokusere på de
+                    vigtigste opgaver. Dette hjalp os med at holde en klar retning og effektivt prioritere vores
+                    arbejde. </p>
+            </section>
+            <section class="section_gap">
+                <h2>VIDEOSITE</h2>
+                <div class="iframe_wrapper image_margin">
+                    <iframe width="560px" height="315px"
+                        src="https://www.youtube.com/embed/GYlkFh6gPjk?si=6qiEWv6Rt5trEsjp" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Til videosite opgaven tog jeg og en holdkammerat ud for at producere en kort video, der skulle
+                    omhandle passion.Vi tøvede ikke, da vi fik muligheden for at filme ude hos vinyltrykkeriet <a
+                        href="https://rpmrecords.dk/" class="underline">RPM
+                        Records.</a> Her skulle vi interviewe medejeren, som fortalte om hvordan han gik fra
+                    roadie til
+                    entreprenør. Jeg brugte meget tid på at strikke historien sammen fra de klip, jeg havde. Jeg var
+                    bekymret om, hvor meget jeg måtte blande mig i hans interview, og lod ham derfor tale mere frit.
+                    Stemningen på fabrikken er en stor del af deres identitet, så vi prioriterede at optage en masse
+                    B-rolls. </p>
+                <h3>Lyd & Musik</h3>
+                <p>Med en baggrund i musik og lydproduktion, valgte jeg at komponere et lille stykke
+                    instrumentalt musik til at give lidt til produktionsværdien. Desværre på grund af tidspres, havde
+                    jeg ikke mulighed for at finmixe det, så det kan godt mudre lidt sammen med voice-overen. For at
+                    fixe det, skulle jeg bare have skruet lidt ned for musikken, og udskåret nogle frekvensområder i
+                    musikken, der ville give endnu mere plads til hans stemme. </p>
+                <p>Til stemmen brugte jeg en equalizer til at fjerne mudrende frekvenser og en kompressor til at banke
+                    de største udsving i volumen ned, samtidigt med at øge de svagere steder, for at få et balanceret
+                    take.</p>
+                <div class="landing_links">
+                    <a href="https://sgrondahl.dk/kea/05_indhold/korte_samtaler/index.html">
+                        <div class="knap whitebox boxshadow image_margin" id="landingknap">Se Videosite</div>
+                    </a>
+                </div>
+            </section>
+            <section class="section_gap">
+                <h2>VIRKSOMHEDSSITE</h2>
+                <video src="video/poten_landingpage.webm" muted autoplay loop
+                    class="whitebox boxshadow image_margin"></video>
+                <p>Som temaets afsluttende projekt fik vi til opgave at redesigne en virksomheds hjemmeside. Her fandt
+                    min gruppe og jeg dyrebutikken Poten. I opgaven fik vi brugt alt hvad vi havde lavet i løbet af
+                    semesteret, fra designteori, moodboards, prototyper og layout diagrammer til interviewteknik, video-
+                    og billedredigering. Vi brugte både eksperttest til først at vurdere, hvorvidt deres hjemmeside var
+                    brugervenlig. </p>
+                <div class="landing_links">
+                    <a href="https://simongroendahl.github.io/poten_website/index.html">
+                        <div class="knap whitebox boxshadow" id="landingknap">Se Website</div>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1NlS0ggiiqbDvJY0TlOYHucne20NRi1ga/edit">
+                        <div class="knap whitebox boxshadow" id="landingknap">Se Dokumentationsrapport</div>
+                    </a>
+                </div>
+            </section>
+            <section class="section_gap whitebox boxshadow">
+                <h2 class="blacktext">Set i Bakspejlet</h2>
+                <p class="blacktext">Desværre, men måske heldigvis, oplevede vi hvor skrøbeligt et gruppearbejde kan
+                    være, da vi alle
+                    skulle lære at navigere os bedre i en gruppesammenhæng. Vi oplevede mange stumble-blocks fra et
+                    gruppemedlem der gik ud, til to syge gruppemedlemmer i en tremandsgruppe.</p>
+                <p class="blacktext">Udover det, satte vi også vores ambitioner for højt. Vi var så
+                    ivrige efter at få lavet en hjemmeside, som måske faktisk ville blive brugt. Det var ikke et klogt
+                    træk, da det tog os for lang tid at droppe idéen om den første virksomhed vi havde kontakt med, da
+                    vi alle var helt spændte på den idé. De var meget svære at komme i kontakt med, hvilket burde have
+                    fået os til at finde et alternativ hurtigere, så vi ikke sakkede bagud med opgaven. </p>
+            </section>
             <div onclick="scrollToTop()" class="tilbagetiltop scrollTop">
                 <img src="ikoner/pil_op.svg" alt="pil ikon der peger op">
                 <div class="portfolio_knap_tilbage">Tilbage til top</div>

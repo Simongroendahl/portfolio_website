@@ -23,24 +23,83 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
-            </a>
-        </div>
-        <div class="navmenu">
-            <a href="index.html">
-                <div class="navbar_button">FORSIDE</div>
-            </a>
-            <a href="portfolio.html">
-                <div class="navbar_button">PORTFOLIO</div>
-            </a>
-            <a href="ommig.html">
-                <div class="navbar_button">OM MIG</div>
-            </a>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="sidebar_button">FORSIDE</a>
+        <a href="portfolio.html" class="sidebar_button">PORTFOLIO</a>
+        <a href="ommig.html" class="sidebar_button">OM MIG</a>
+    </div>
 
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ikoner/sg_logo_white.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                </a>
+
+                <div class="navmenu">
+                    <a href="index.html">
+                        <div class="navbar_button landing_nav_farve">FORSIDE</div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="navbar_button landing_nav_farve">PORTFOLIO</div>
+                    </a>
+                    <a href="ommig.html">
+                        <div class="navbar_button landing_nav_farve underline">OM MIG</div>
+                    </a>
+
+                </div>
+                <span class="burger_button" onclick="openNav()">
+                    <img src="ikoner/burger_menu_icon_white.svg" alt="" class="nav_burger"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ommig_wrapper">
+        <div class="video_baggrund">
+            <video autoplay muted loop id="landing_video">
+                <source src="video/portfolio_bg_bw.mp4" type="video/webm">
+            </video>
         </div>
+        <section class="tema1_landing">
+            <h1 class="whitetext om_titel">OM MIG</h1>
+            <div class="bio_wrapper">
+                <div class="ommig_grid">
+                    <p>Hej og velkommen til min digitale portefølje! Jeg hedder Simon Grøndahl, og studerer
+                        multimediedesign
+                        på KEA, på mit andet semester. Her udforsker og udfordrer jeg mine grænser inden for digital
+                        kreativitet dagligt. Før jeg kastede mig ud i multimediedesign, tilbragte jeg de sidste ti år
+                        med at
+                        rejse verden rundt, lige fra Mexico til Amager. Disse oplevelser har formet min tilgang til alt,
+                        der
+                        er kreativt.</p>
+                    <p>Min fascination af multimediedesign startede med nysgerrighed om, hvordan billeder, lyde og
+                        interaktion kan smelte sammen for at skabe en unik oplevelse. Jeg ønsker at forstå, hvordan
+                        farver,
+                        former og tekst kan kombineres for at formidle budskaber og fortælle historier på digitale
+                        platforme.</p>
+
+                </div>
+                <img src="billeder/portfolio_profile_blue.webp" alt="billede af Simon Grøndahl"
+                    class="img_style om_img">
+            </div>
+            <div class="ommig_2 whitebox">
+                <h2 class="blacktext">Ser fremad gennem bakspejlet</h2>
+                <p class="blacktext">Min tilgang til multimediedesign er præget af eksperimenter og en legende ånd. Jeg
+                    tror på
+                    vigtigheden af at tænke uden for boksen og udfordre konventionerne for at skabe noget unikt og
+                    mindeværdigt, samtidig med at jeg respekterer de grundlæggende principper.</p>
+                <p class="blacktext">Design gav først mening for mig, da en lærer sagde under en lektion: "Hvis alt er
+                    i
+                    fokus, er intet i fokus." Sætningen ruskede i mig, og udfordrede den måde, jeg havde været
+                    kreativ
+                    de sidste 16 år. Det ændrede ikke kun min tilgang til webdesign, men også min måde at lave mad,
+                    skrive sange og endda min indretning derhjemme, hvilket min bedre halvdel bestemt ikke har
+                    klaget
+                    over.</p>
+            </div>
+
+        </section>
     </div>
 
 </body>

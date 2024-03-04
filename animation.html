@@ -23,34 +23,44 @@
 </head>
 
 <body>
-    <div class="navbar" id="port_nav">
-        <div class="logo">
-            <a href="index.html">
-                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
-            </a>
-        </div>
-        <div class="navmenu portmenu">
-            <a href="index.html">
-                <div class="navbar_button">FORSIDE</div>
-            </a>
-            <a href="portfolio.html">
-                <div class="navbar_button">PORTFOLIO</div>
-            </a>
-            <a href="ommig.html">
-                <div class="navbar_button">OM MIG</div>
-            </a>
-        </div>
-        <div class="menu_knap">
-            <div class="menu_ikon">
-                <img src="ikoner/burger_menu_icon.svg" alt="">
-            </div>
-        </div>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="sidebar_button">FORSIDE</a>
+        <a href="portfolio.html" class="sidebar_button">PORTFOLIO</a>
+        <a href="ommig.html" class="sidebar_button">OM MIG</a>
     </div>
 
+    <header>
+        <nav class="nav_block">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                </a>
+
+                <div class="navmenu">
+                    <a href="index.html">
+                        <div class="navbar_button">FORSIDE</div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="navbar_button underline">PORTFOLIO</div>
+                    </a>
+                    <a href="ommig.html">
+                        <div class="navbar_button">OM MIG</div>
+                    </a>
+
+                </div>
+                <span class="burger_button" onclick="openNav()">
+                    <img src="ikoner/burger_menu_icon.svg" alt="" class="nav_burger"></span>
+            </div>
+        </nav>
+    </header>
+
     <div class="content_wrapper">
-        <video autoplay muted loop id="landing_video">
-            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
-        </video>
+        <div class="video_baggrund">
+            <video autoplay muted loop id="landing_video">
+                <source src="video/portfolio_bg_bw.mp4" type="video/webm">
+            </video>
+        </div>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
@@ -127,7 +137,15 @@
                 <div class="fff_wrapper">
                     <img src="" alt="">
                     <p>Fishing For Fishies - et atmosfærisk, gyser fiskespil, hvor man skal sørge for at fange de
-                        rigtige fisk inden at tiden løber ud, eller inden de fanger dig. </p>
+                        rigtige fisk inden at tiden løber ud, før de onde fanger dig. </p>
+                </div>
+                <div class="landing_links">
+                    <a href="https://sgrondahl.dk/kea/04_animation/website/index.html">
+                        <div class="knap whitebox boxshadow" id="landingknap">Se Website</div>
+                    </a>
+                    <a href="https://sgrondahl.dk/kea/04_animation/website/spil.html">
+                        <div class="knap whitebox boxshadow" id="landingknap">Prøv Spillet</div>
+                    </a>
                 </div>
             </section>
             <section class="section_gap">
@@ -169,10 +187,11 @@
             <section class="section_gap whitebox">
                 <h2 class="blacktext">Feedback & Findings</h2>
                 <div class="feedback_fff_wrapper">
-                    <p class="blacktext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum
-                        facilis, molestias
-                        minima architecto minus consectetur nesciunt magnam aspernatur nostrum quos suscipit eligendi,
-                        incidunt enim dolores dolorum labore veniam! Sequi.</p>
+                    <p class="blacktext">Feedbacken var overvældende fra da vi skulle fremvise vores spil på skolen. Her
+                        lærte jeg at min mavefornemmelse om storytelling var værd at jage, men jeg fortryder at jeg ikke
+                        fik lavet hjemmesiden responsivt. Jeg var meget optaget af at lære en masse spændende nye ting
+                        som parallax scrolling, hvilket jeg havde på min ene side, men jeg fik ikke lavet de sider, jeg
+                        skulle eller uploadet mit state machine diagram, som var blevet slettet.</p>
                     <img src="billeder/fff_feedback_1.webp" alt="screenshot af feedback for Fishing For Fishies"
                         class="whitebox boxshadow">
                     <p class="blacktext">Her lærte jeg at uanset hvor grundigt du får testet et produkt, hvor meget man

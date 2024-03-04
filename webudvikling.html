@@ -24,35 +24,44 @@
 
 <body class="portfolio_landing_wrapper">
 
-    <div class="navbar" id="port_nav">
-        <div class="logo" id="landing_logo_bg">
-            <a href="index.html">
-                <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon" id="landing_logo">
-            </a>
-        </div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="navmenu">
-            <a href="index.html">
-                <div class="navbar_button">FORSIDE</div>
-            </a>
-            <a href="portfolio.html">
-                <div class="navbar_button">PORTFOLIO</div>
-            </a>
-            <a href="ommig.html">
-                <div class="navbar_button">OM MIG</div>
-            </a>
-
-        </div>
+    <div class="sidebar" id="minSidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn_id" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="sidebar_button">FORSIDE</a>
+        <a href="portfolio.html" class="sidebar_button">PORTFOLIO</a>
+        <a href="ommig.html" class="sidebar_button">OM MIG</a>
     </div>
 
+    <header>
+        <nav class="nav_block">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ikoner/sg_logo.svg" alt="Logo med initialerne S og G" class="logo_ikon">
+                </a>
+
+                <div class="navmenu">
+                    <a href="index.html">
+                        <div class="navbar_button">FORSIDE</div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="navbar_button underline">PORTFOLIO</div>
+                    </a>
+                    <a href="ommig.html">
+                        <div class="navbar_button">OM MIG</div>
+                    </a>
+
+                </div>
+                <span class="burger_button" onclick="openNav()">
+                    <img src="ikoner/burger_menu_icon.svg" alt="" class="nav_burger"></span>
+            </div>
+        </nav>
+    </header>
+
     <div class="content_wrapper">
-        <video autoplay muted loop id="landing_video">
-            <source src="video/portfolio_bg_bw.mp4" type="video/mp4">
-        </video>
+        <div class="video_baggrund">
+            <video autoplay muted loop id="landing_video">
+                <source src="video/portfolio_bg_bw.mp4" type="video/webm">
+            </video>
+        </div>
         <section class="tema1_landing">
             <a href="portfolio.html" class="portfolio_back">
                 <img src="ikoner/pil_venstre.svg" alt="pil til venstre">
@@ -216,10 +225,16 @@
                             layout
                             sig
                             fra et række-baseret layout til at benytte sig af flere kolonner. </p>
+                        <div class="landing_links">
+                            <a href="https://sgrondahl.dk/kea/02_web/01_website/website/index.html">
+                                <div class="knap whitebox boxshadow" id="landingknap">Se Website</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
             </section>
+
             <section class="section_gap">
                 <div class="ny_viden_wrapper whitebox boxshadow">
                     <h2 class="blacktext">Hvad jeg fik lært i tema 2:</h2>
